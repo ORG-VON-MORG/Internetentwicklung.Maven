@@ -1,0 +1,119 @@
+• Prüfen Sie mit einem Maven-Kommando, ob Maven korrekt installiert ist.
+	mvn -version
+
+• Legen Sie ein einfaches Maven-Projekt an mit der GroupId „de.stl.saar.internetentw1.uebungen“
+und der ArtifactId „Maven“.
+
+• Finden Sie die Koordinaten von Apache Commons Math heraus und tragen Sie diese Abhängigkeit in Ihre pom.xml ein.
+
+• Erstellen Sie eine kleine Javaklasse MyMath mit einer Methode add(), welche die Methode ArithmeticUtils.addAndCheck() von Apache Commons
+Math aufruft. Sie erhält zwei Parameter und gibt das Ergebnis zurück.
+
+• Erstellen Sie eine Testklasse MyMathTest im richtigen Verzeichnis. Der
+Test muss erfolgreich durchlaufen.
+
+• Starten Sie nur die Tests.
+	mvn test
+
+• Erzeugen Sie eine jar-Datei.
+	mvn package
+
+• Leeren Sie das target-Verzeichnis mit dem Maven-Kommando.
+	mvn clean
+
+• Installieren Sie Ihr Projekt im lokalen Repository.
+	mvn install
+
+• Erzeugen Sie eine JavaDoc.
+	mvn javadoc:javadoc
+
+• Laden Sie die Datei test.txt aus dem Portal herunter und speichern Sie sie
+so in Ihrem Projekt, dass Ihr Programm sie finden kann.
+
+• Lesen Sie die Datei in der main-Methode und geben Sie den Inhalt auf
+dem Terminal aus.
+
+• Erweitern Sie pom.xml so, dass Sie Ihr Programm mittels Maven ohne
+Angabe einer Startklasse starten können.
+• Bauen Sie Ihr Projekt so um, dass es Module enthalten kann.
+• Erzeugen Sie die folgenden drei Module:
+– Model
+– Core
+– Persistence
+
+• Erzeugen Sie die jar-Dateien aller Module mit einem Kommando. In welchem Verzeichnis müssen Sie dieses Kommando abschicken?
+	mvn package
+
+• Installieren Sie alle Ihre Module ins lokale Repository.
+
+• Deklarieren Sie die folgenden Abhängigkeiten. Achten Sie darauf, dass Sie möglichst geschickt Vererbung und Dependency-Management einsetzen.
+  Verwenden Sie für die Versionsnummern ausschließlich Properties:
+– Model:
+	Hibernate-Core
+	JPA 2.0 API
+	Apache Commons Logging
+	Apache Commons Math
+– Core:
+	Hibernate-Core
+	Apache Commons Logging
+	Apache Commons Math
+	Apache Commons Lang
+	Joda Time
+	Model
+	Persistence
+- Persistence:
+	Hibernate-Core
+	JPA 2.0 API
+	Apache Commons Logging
+	Model
+	Apache Commons Math
+
+• Verschieben Sie Ihre Javaklasse und die Testklasse in das Modul Core.
+
+• Verpacketieren Sie alle Ihre Projekte, um zu prüfen, ob alles korrekt funktioniert.
+
+• Prüfen Sie mit den tatsächlichen POMs ihrer Module, ob Ihre Definitionen der Abhängigkeiten korrekt sind.
+	mvn help:effective-pom
+
+• Schauen Sie sich eine Liste mit allen Abhängigkeiten im Projekt an.
+	mvn dependency:list
+
+• Schauen Sie sich die Baumansicht aller Abhängigkeiten an.
+	mvn dependency:tree
+
+• Suchen Sie nach unbenutzten Abhängigkeiten.
+	mvn dependency:analyze
+
+• Definieren Sie drei Profile in Ihrem Projekt:
+– development (standardmäßig aktiv)
+– productive
+– developmentLinux
+
+• Sorgen Sie dafür, dass ein Profil für eine Java-Version Ihrer Wahl automatisch aktiviert wird.
+
+• Schauen Sie sich an, welche Profile aktiv sind.
+	mvn help:active-profiles
+
+• Aktivieren Sie Reporting mit den folgenden Plugins:
+– JavaDoc
+– Checkstyle
+– FindBugs
+
+• Erzeugen Sie einmal die Webseite mit der gesamten Dokumentation.
+	mvn javadoc:javadoc
+
+• Binden Sie TagList mit ein und konfigurieren Sie es mit den folgenden
+Tags:
+– TODO und todo für noch zu erledigende Aufgaben.
+– TEST_ME für Code, der noch getestet werden muss.
+– REFACTORIZE_ME für Code, der refaktorisiert werden sollte.
+• Erzeugen Sie die Webseite noch einmal mit der gesamten Dokumentation.
+
+• Basteln Sie eine kleine FAQ mit mindestens zwei Bereichen mit je zwei
+Fragen zu Ihrem Projekt. Fragen und Antworten müssen keinen Sinn ergeben.
+
+• Ändern Sie das Format des Veröffentlichungsdatum auf ein deutsches Format.
+
+• Sorgen Sie dafür, dass sämtliche Reports angezeigt werden.
+
+• Erzeugen Sie die Webseite noch einmal mit der gesamten Dokumentation
