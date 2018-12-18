@@ -20,5 +20,6 @@ public class MyMath {
         String st;
         while ((st = br.readLine()) != null)
             System.out.println(st);
+
     }
 }
