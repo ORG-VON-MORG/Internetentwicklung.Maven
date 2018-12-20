@@ -68,7 +68,7 @@ Angabe einer Startklasse starten können.
 	JPA 2.0 API
 	Apache Commons Logging
 	Model
-	Apache Commons Math
+
 
 • Verschieben Sie Ihre Javaklasse und die Testklasse in das Modul Core.
 
