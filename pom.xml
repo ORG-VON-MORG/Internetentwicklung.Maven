@@ -16,12 +16,13 @@
     <groupId>de.stl.saar.internetentw1.uebungen</groupId>
     <artifactId>Maven</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <modules>
         <module>Model</module>
         <module>Core</module>
         <module>Persistence</module>
     </modules>
-    <packaging>pom</packaging>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,6 +31,24 @@
         <mathe-version>3.2</mathe-version>
         <commonsLogging-version>1.2</commonsLogging-version>
     </properties>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>sun_checks</configLocation>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </reporting>
 
 <dependencies>
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
@@ -54,10 +73,27 @@
         <artifactId>commons-logging</artifactId>
         <version>${commonsLogging-version}</version>
     </dependency>
-
-
-
 </dependencies>
+
+    <profiles>
+        <profile>
+            <id>development</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>productive</id>
+        </profile>
+        <profile>
+            <id>developmentLinux</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <jdk>1.5</jdk>
+            </activation>
+        </profile>
+
+    </profiles>
 
 
 </project>
