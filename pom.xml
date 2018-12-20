@@ -4,6 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>de.stl.saar.internetentw1.uebungen.MyMath</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
         <resources>
             <resource>
                 <directory>resources</directory>
@@ -13,6 +25,7 @@
             </resource>
         </resources>
     </build>
+
     <groupId>de.stl.saar.internetentw1.uebungen</groupId>
     <artifactId>Maven</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -22,7 +35,7 @@
         <module>Persistence</module>
     </modules>
     <packaging>pom</packaging>
-<dependencies>
+    <dependencies>
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
     <dependency>
         <groupId>org.apache.commons</groupId>
