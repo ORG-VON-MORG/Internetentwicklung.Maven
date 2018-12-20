@@ -35,7 +35,9 @@ dem Terminal aus.
 
 • Erweitern Sie pom.xml so, dass Sie Ihr Programm mittels Maven ohne
 Angabe einer Startklasse starten können.
+
 • Bauen Sie Ihr Projekt so um, dass es Module enthalten kann.
+
 • Erzeugen Sie die folgenden drei Module:
 – Model
 – Core
