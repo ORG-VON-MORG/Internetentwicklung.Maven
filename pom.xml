@@ -47,7 +47,46 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>taglist-maven-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <tagListOptions>
+                        <tagClasses>
+                            <tagClass>
+                                <displayName>Todos</displayName>
+                                <tags>
+                                    <tag>
+                                        <matchString>TODO</matchString>
+                                        <matchType>ignoreCase</matchType>
+                                    </tag>
+                                </tags>
+                            </tagClass>
+
+                            <tagClass>
+                                <displayName>Zu Testen</displayName>
+                                <tags>
+                                    <tag>
+                                        <matchString>TEST_ME</matchString>
+                                    </tag>
+                                </tags>
+                            </tagClass>
+
+                            <tagClass>
+                                <displayName>Zu refaktorisieren</displayName>
+                                <tags>
+                                    <tag>
+                                        <matchString>REFACTORIZE_ME</matchString>
+                                    </tag>
+                                </tags>
+                            </tagClass>
+                        </tagClasses>
+                    </tagListOptions>
+                </configuration>
+            </plugin>
         </plugins>
+
     </reporting>
 
 <dependencies>

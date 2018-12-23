@@ -39,6 +39,7 @@ dem Terminal aus.
 Angabe einer Startklasse starten können.
 
 • Bauen Sie Ihr Projekt so um, dass es Module enthalten kann.
+->Fertig
 
 • Erzeugen Sie die folgenden drei Module:
 – Model
@@ -114,7 +115,7 @@ Tags:
 – TODO und todo für noch zu erledigende Aufgaben.
 – TEST_ME für Code, der noch getestet werden muss.
 – REFACTORIZE_ME für Code, der refaktorisiert werden sollte.
-
+-> Fertig
 • Erzeugen Sie die Webseite noch einmal mit der gesamten Dokumentation.
 
 
@@ -122,7 +123,9 @@ Tags:
 Fragen zu Ihrem Projekt. Fragen und Antworten müssen keinen Sinn ergeben.
 
 • Ändern Sie das Format des Veröffentlichungsdatum auf ein deutsches Format.
-
+-> Fertig
 • Sorgen Sie dafür, dass sämtliche Reports angezeigt werden.
-
+    mvn site:stage
 • Erzeugen Sie die Webseite noch einmal mit der gesamten Dokumentation
+
+
