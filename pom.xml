@@ -19,6 +19,11 @@
                     <configLocation>sun_checks</configLocation>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
         </plugins>
         <resources>
             <resource>
@@ -33,6 +38,14 @@
     <artifactId>Maven</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <distributionManagement>
+        <site>
+            <id>Maven</id>
+            <url>https://stl-portal.htwsaar.de</url>
+        </site>
+    </distributionManagement>
+
     <modules>
         <module>Model</module>
         <module>Core</module>
@@ -54,21 +67,17 @@
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
             </plugin>
-
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>3.3</version>
-            </plugin>
         </plugins>
     </reporting>
-<name></name>
-<description></description>
-<dependencies>
+
+<name>Maven-Projekt</name>
+<description>Das ist ein Maven Projekt</description>
+
+    <dependencies>
     <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-math3</artifactId>
