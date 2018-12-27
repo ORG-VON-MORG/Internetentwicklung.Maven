@@ -37,6 +37,7 @@
         <module>Model</module>
         <module>Core</module>
         <module>Persistence</module>
+        <module>application</module>
     </modules>
 
 
@@ -66,7 +67,8 @@
             </plugin>
         </plugins>
     </reporting>
-
+<name></name>
+<description></description>
 <dependencies>
     <dependency>
         <groupId>org.apache.commons</groupId>
@@ -91,6 +93,7 @@
     </dependency>
 </dependencies>
 
+    
     <profiles>
         <profile>
             <id>development</id>

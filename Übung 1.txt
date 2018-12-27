@@ -117,6 +117,7 @@ Tags:
 
 • Erzeugen Sie die Webseite noch einmal mit der gesamten Dokumentation.
     mvn site
+    mvn site:stage
     mvn javadoc:javadoc
 
 • Basteln Sie eine kleine FAQ mit mindestens zwei Bereichen mit je zwei
@@ -127,3 +128,4 @@ Fragen zu Ihrem Projekt. Fragen und Antworten müssen keinen Sinn ergeben.
 • Sorgen Sie dafür, dass sämtliche Reports angezeigt werden.
 
 • Erzeugen Sie die Webseite noch einmal mit der gesamten Dokumentation
+    mvn site:stage
