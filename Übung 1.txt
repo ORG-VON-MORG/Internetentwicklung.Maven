@@ -116,13 +116,16 @@ Tags:
 – REFACTORIZE_ME für Code, der refaktorisiert werden sollte.
 
 • Erzeugen Sie die Webseite noch einmal mit der gesamten Dokumentation.
-
+    mvn site
+    mvn site:stage
+    mvn javadoc:javadoc
 
 • Basteln Sie eine kleine FAQ mit mindestens zwei Bereichen mit je zwei
 Fragen zu Ihrem Projekt. Fragen und Antworten müssen keinen Sinn ergeben.
 
 • Ändern Sie das Format des Veröffentlichungsdatum auf ein deutsches Format.
-
+->Fertig
 • Sorgen Sie dafür, dass sämtliche Reports angezeigt werden.
 
 • Erzeugen Sie die Webseite noch einmal mit der gesamten Dokumentation
+    mvn site:stage

@@ -3,6 +3,8 @@
 
 
     <publishDate position= "left" format="dd.MM.YYYY"/>
-
+<body>
+    <menu></menu>
+</body>
 
 </project>
