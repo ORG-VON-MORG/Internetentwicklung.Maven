@@ -4,6 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+                <configuration>
+                    <locales>de</locales>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>sun_checks</configLocation>
+                </configuration>
+            </plugin>
+        </plugins>
         <resources>
             <resource>
                 <directory>resources</directory>
@@ -38,22 +54,21 @@
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
             </plugin>
-            <plugin>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <configuration>
-                    <configLocation>sun_checks</configLocation>
-                </configuration>
-            </plugin>
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.3</version>
             </plugin>
         </plugins>
     </reporting>
 <name></name>
 <description></description>
 <dependencies>
-    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
     <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-math3</artifactId>
