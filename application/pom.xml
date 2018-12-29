@@ -9,7 +9,35 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>application</artifactId>
 
+    <artifactId>application</artifactId>
+    <name>Application</name>
+    <description>Das ist die Hauptjar-Datei</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <core-version>1.0-SNAPSHOT</core-version>
+        <model-version>1.0-SNAPSHOT</model-version>
+        <persistence-version>1.0-SNAPSHOT</persistence-version>
+
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>de.stl.saar.internetentw1.uebungen</groupId>
+            <artifactId>Core</artifactId>
+            <version>${core-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>de.stl.saar.internetentw1.uebungen</groupId>
+            <artifactId>Model</artifactId>
+            <version>${model-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>de.stl.saar.internetentw1.uebungen</groupId>
+            <artifactId>Persistence</artifactId>
+            <version>${persistence-version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

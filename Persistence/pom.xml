@@ -18,5 +18,9 @@
         </dependency>
     </dependencies>
 
+    <name>Persistence</name>
+    <description>Das die das Modul fuer Persistence</description>
+
+
 
 </project>

@@ -6,13 +6,15 @@ und der ArtifactId „Maven“.
 ->Fertig
 
 • Finden Sie die Koordinaten von Apache Commons Math heraus und tragen Sie diese Abhängigkeit in Ihre pom.xml ein.
+Gefunden bei https://mvnrepository.com
 
 • Erstellen Sie eine kleine Javaklasse MyMath mit einer Methode add(), welche die Methode ArithmeticUtils.addAndCheck() von Apache Commons
 Math aufruft. Sie erhält zwei Parameter und gibt das Ergebnis zurück.
 ->Fertig
 
 • Erstellen Sie eine Testklasse MyMathTest im richtigen Verzeichnis. Der
-Test muss erfolgreich durchlaufen.
+de.stl.saar.internetentw1.uebungen.Test muss erfolgreich durchlaufen.
+->Fertig
 
 • Starten Sie nur die Tests.
 	mvn test
@@ -31,20 +33,36 @@ Test muss erfolgreich durchlaufen.
 
 • Laden Sie die Datei test.txt aus dem Portal herunter und speichern Sie sie
 so in Ihrem Projekt, dass Ihr Programm sie finden kann.
+->Fertig
 
 • Lesen Sie die Datei in der main-Methode und geben Sie den Inhalt auf
 dem Terminal aus.
+->Fertig
 
 • Erweitern Sie pom.xml so, dass Sie Ihr Programm mittels Maven ohne
 Angabe einer Startklasse starten können.
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>
+                                de.stl.saar.internetentw1.uebungen.MyMath
+                            </mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+->Fertig
 
 • Bauen Sie Ihr Projekt so um, dass es Module enthalten kann.
--> Fertig
+->Fertig
 
 • Erzeugen Sie die folgenden drei Module:
 – Model
 – Core
 – Persistence
+->Fertig
 
 • Erzeugen Sie die jar-Dateien aller Module mit einem Kommando. In welchem Verzeichnis müssen Sie dieses Kommando abschicken?
 	mvn package aus dem Root Verzeichnis
@@ -118,6 +136,7 @@ Tags:
 – TODO und todo für noch zu erledigende Aufgaben.
 – TEST_ME für Code, der noch getestet werden muss.
 – REFACTORIZE_ME für Code, der refaktorisiert werden sollte.
+-> Fertig
 
 • Erzeugen Sie die Webseite noch einmal mit der gesamten Dokumentation.
     mvn site
@@ -129,6 +148,7 @@ Fragen zu Ihrem Projekt. Fragen und Antworten müssen keinen Sinn ergeben.
 
 • Ändern Sie das Format des Veröffentlichungsdatum auf ein deutsches Format.
 ->Fertig
+
 • Sorgen Sie dafür, dass sämtliche Reports angezeigt werden.
     Reporting aktivieren dann mvn site:stage
 

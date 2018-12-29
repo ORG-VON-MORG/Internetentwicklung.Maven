@@ -1,44 +1,40 @@
 <faqs title="Fequently Asked Questions">
-    <part id="Allgemeine Fragen">
+
+     <part id="Allgemeine Fragen">
         <title>Allgemeine Fragen</title>
         <faq id="WieFindenSieProgramm">
             <question>Wie finden Sie das Programm</question>
             <answer>
                 <p>Es ist das beste Programm, dass ich je benutzt habe</p>
-            </answer>
-            <answer>
                 <p>Ich bin in der Matrix</p>
             </answer>
+        </faq>
+        <faq id="Warumgekauft">
            <question>Warum haben Sie unser Programm gekauft</question>
                 <answer>
                     <p>Ich bin jung und brauch kein Geld</p>
-                </answer>
-                <answer>
                     <p>Langeweile</p>
-                 </answer>
+                </answer>
         </faq>
      </part>
-    <part id="Technische Fragen">
 
+    <part id="Technische Fragen">
+        <title>Technische Fragen</title>
         <faq id="Techfaq">
             <question>Wie schnell ist unser Programm</question>
             <answer>
                 <p>Schnell</p>
-            </answer>
-            <answer>
                 <p>Langsam</p>
             </answer>
+        </faq>
+        <faq id="Probleme">
            <question>Haben Sie Probleme</question>
                 <answer>
                     <p>Ja</p>
-                </answer>
-                <answer>
                     <p>Nein</p>
-                 </answer>
+                </answer>
         </faq>
      </part>
-
-
 
 
 </faqs>

@@ -13,4 +13,7 @@
 
     </dependencies>
 
+    <name>Model</name>
+    <description>Das die das Modul fuer die Model Klassen</description>
+
 </project>
