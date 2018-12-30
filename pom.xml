@@ -72,6 +72,7 @@
         <hibernate-version>5.3.7.Final</hibernate-version>
         <mathe-version>3.2</mathe-version>
         <commonsLogging-version>1.2</commonsLogging-version>
+        <jdk-version>1.5</jdk-version>
     </properties>
 
     <reporting>
@@ -128,7 +129,7 @@
             <id>developmentLinux</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
-                <jdk>1.5</jdk>
+                <jdk>${jdk-version}</jdk>
             </activation>
         </profile>
 

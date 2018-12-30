@@ -3,7 +3,7 @@
 
 • Legen Sie ein einfaches Maven-Projekt an mit der GroupId „de.stl.saar.internetentw1.uebungen“
 und der ArtifactId „Maven“.
-->Fertig
+   mvn archetype:generate -DgroupId= de.stl.saar.internetentw1.uebungen -DartifactId=Maven
 
 • Finden Sie die Koordinaten von Apache Commons Math heraus und tragen Sie diese Abhängigkeit in Ihre pom.xml ein.
 Gefunden bei https://mvnrepository.com
@@ -144,7 +144,7 @@ Tags:
 
 • Basteln Sie eine kleine FAQ mit mindestens zwei Bereichen mit je zwei
 Fragen zu Ihrem Projekt. Fragen und Antworten müssen keinen Sinn ergeben.
-->Noch Bugs
+->Fertig
 
 • Ändern Sie das Format des Veröffentlichungsdatum auf ein deutsches Format.
 ->Fertig
